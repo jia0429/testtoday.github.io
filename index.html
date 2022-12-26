@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>專案簡介</title>
+    <link rel="icon" href="/img/logo.ico">
+</head>
+<style>
+    .header {
+        padding-bottom: 5.3%;
+    }
+    /* .dropdown-menu >li>a {
+    width: 50px;
+    text-align: center;
+   } */
+    .dropdown-toggle,
+    .navbar-nav li a {
+        width: 120px;
+        text-align: center;
+    }
+
+    .navbar {
+        opacity: 0.8;
+        margin-bottom: 0;
+        background-color: #E9EDC9;
+        transition: all 0.2s ease-out;
+    }
+
+    .navbar-container {
+        position: relative;
+    }
+
+    .navbar .navbar-nav li a {
+        font-size: 20px;
+        color: #2f1b02;
+        transition: all 0.2s ease-out;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+        transition: all 0.2s ease-out;
+        font-family: Comic Sans MS;
+    }
+
+    .navbar-scroll {
+        opacity: 1;
+    }
+
+
+
+    @media (min-width: 768px) {
+        .navbar {
+            height: 20%;
+        }
+
+        /* .navmenu */
+        .navbar .navbar-nav li a {
+            padding: 0;
+            margin-top: 15%;
+            margin-left: 20px;
+            line-height: 70px;
+        }
+
+        .navbar-brand {
+            font-size: 28px;
+            padding: 0;
+            height: 120px;
+            line-height: 120px;
+        }
+
+
+        .navbar-scroll {
+            height: 10%;
+            line-height: 70px;
+        }
+
+        .navbar-scroll #top-social-menu {
+            display: none;
+            transition: all 0.2s ease-out;
+        }
+
+        .navbar-scroll .navbar-brand {
+            height: 12%;
+            line-height: 70px;
+        }
+
+        .navbar-scroll .navbar-nav>li>a {
+            opacity: 1;
+            padding: 0;
+            margin-top: 0;
+        }
+
+
+    }
+
+    .text {
+        margin: 5%;
+    }
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 2%;
+  z-index: 99;
+  cursor: pointer;
+  padding: none;
+  border: none;
+  background-color: #ffffff00;
+}
+
+</style>
+
+<body>
+    <div class="header">
+        <script>
+            $(window).scroll(function () {
+                var sc = $(window).scrollTop()
+                if (sc > 150) {
+                    $("#main-navbar").addClass("navbar-scroll")
+                }
+                else {
+                    $("#main-navbar").removeClass("navbar-scroll")
+                }
+            });
+        </script>
+
+        <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top ">
+            <div class="container navbar-container">
+                <div class="navbar-header">
+                    <!-- 漢堡 -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">漢堡先生</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="https://youtu.be/VvD0wnLLmm0" class="navbar-brand" target="_blank"
+                        style="color: #2f1b02;">M Math N 救數零距離</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse chose">
+                    <ul class="nav navbar-nav navbar-right navmenu">
+                        <li><a>專題簡介</a></li>
+                        <li><a href="./src/team.html">組員資料</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">系統畫面<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./src/system01.html">基本模式</a></li>
+                                <li><a href="./src/system02.html">家教模式</a></li>
+                                <li><a href="./src/system03.html">會員專區</a></li>
+                                <li><a href="./src/system05.html">登入註冊</a></li>
+                                <li><a href="./src/system04.html">其他頁面</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <div class="row text">
+        <h3 class="tit"><img src="../img/light.png" style="width: 35px; margin-bottom: 10px;">專題緣起</h3>
+        <div class="col-md-4">
+            <h4>☑&nbsp;數學教學平台稀少，且題型變化多</h4>
+        </div>
+        <p class="col-md-8" style=" line-height: 28px; font-size: 15px;">
+            現有的教學平台以語言類別居多，學生能夠在網路上獲得數學的資源相對較少，但對於國高中生而言，數學是許多同學最不擅長的科目。國高中數學不但有許多需要活用的理論公式，更有許多問題必須使用特殊的解法，才能快速且正確地求出問題的答案。若是學生在解題時，無法正確判斷應該使用的理論公式，或是不知道題型的快速解法，則可能在解題過程中耗費大量時間思考如何解題，且無法求得正確答案。
+        </p>
+        <h4 class="col-md-4">☑&nbsp;數學是科學的根源</h4>
+        <p class="col-md-8" style=" line-height: 28px; font-size: 15px;">
+            在人類科技的發展中，數學佔有非常重要的位置，因為數學是各種科學理論的基礎，不論是物理、化學、醫學、資訊工程、商學、建築等等，幾乎每一種產業、學問都需要用到不同面向的數學知識和邏輯，因此台灣未來欲發展科技技術，勢必要提升人民的數學水平、增加相關人才更重要的是加強數學教育，讓學生們能夠更早了解數學對我們生活的重要性，進而對數學產生興趣。
+        </p>
+        <h4 class="col-md-4">☑&nbsp;國高中生遇到瓶頸無法即時找到答案</h4>
+        <p class="col-md-8" style=" line-height: 28px; font-size: 15px;">
+            當國高中生在家中寫作業或解題遇到瓶頸時，通常無法即時找到可以請教的對象(學校老師、補習班老師、數學好的同學)，導致越來越跟不上進度。因此多會想要到網路上搜尋解答，然而數學問題中常有許多圖形或表格，使得學生難以將數學問題完整的輸入至網路上進行搜尋比對，所以學生在短時間內想要在網路上搜尋到正確的數學問題解答極為困難。
+        </p>
+
+        <h3 class="tit"><img src="../img/light.png" style="width: 35px; margin-bottom: 10px;">專題特色</h3>
+        <h4 class="col-md-4">☑&nbsp;創意發想</h4>
+        <p class="col-md-8" style=" line-height: 28px; font-size: 15px;">
+            全球爆發新冠肺炎疫情使得人們的工作和生活方式產生了重大改變，外送平台使用率大幅提高，遠距教學也成為近期新興學習模式，因此本團隊將上述兩者作為靈感來源針對數學開發了一款結合外送模式的教學應用程式---M Math N。
+        </p>
+        <h4 class="col-md-4">☑&nbsp;系統特色</h4>
+        <p class="col-md-8" style=" line-height: 28px; font-size: 15px;">
+            本團隊開發的應用程式針對「數學」進行線上即時配對教學，使用拍照的方式上傳題目以解決圖形表格無法搜尋之問題，並且針對學生的個人需求進行解題，擁有高度客製化之特色且解題者註冊時需上傳相關證明(教師執照、相關學歷證明、證照等)，通過系統審核才能正式上線解題，能夠確保應用程式的教學品質。
+        </p>
+        <h4 class="col-md-4">☑&nbsp;功能特色</h4>
+        <p class="col-md-8" style=" line-height: 28px; font-size: 15px;">M Math
+            N是一個線上即時解答數學問題的媒合APP，結合外送平台模式可在規定時間內將學生需要協助解答的數學問題分派給在線排班的解題專家(經過認證的數學相關科系背景人士)，並完成解題。藉由M Math N
+            APP的媒合，國高中生在遇到急需他人協助幫忙解答數學問題的困境，將可獲得最即時、專業的協助。雖然現有的線上學習APP眾多，但以數學為主題的學習APP卻非常稀少，且不擅長數學的學生也可能因為害羞而不敢時常麻煩同學解題，因此我們將透過以下功能來解決這些問題。
+        </p>
+
+        <h3 class="tit"><img src="../img/light.png" style="width: 35px; margin-bottom: 10px;">專題貢獻</h3>
+        <h4 class="col-md-4">☑&nbsp;學術界</h4>
+        <p class="col-md-8" style=" line-height: 28px; font-size: 15px;">
+            雖然現今網路教學平台眾多，但針對數學為主的卻較為稀少，為了解決這樣的問題，我們開發了一個結合外送平台與數學教學的線上媒合即時解題系統，並以拍照上傳題目與答案的方式進行解題教學，以解決無法打字輸入圖片題型的問題，此外，我們以隨機配對提問者與解題者的方式達成解題即時性的效果。
+        </p>
+        <h4 class="col-md-4">☑&nbsp;實務界</h4>
+        <p class="col-md-8" style=" line-height: 28px; font-size: 15px;">
+            本專題利用圖片的方式上傳題目，並採用即時派單的模式，讓學生能在最短的時間獲得解答，改善線上教學平台的提問方式，提升平台效益及品質，擁有基本及家教模式，讓國高中生自由選擇適合的教學方式。希望此專題對後續的開發者能有一定程度上的影響，也希望可以促進線上教學平台的發展，藉此讓偏鄉地區的學生也可以透過線上教學，得到更完善的教學資源，縮小城鄉差距。
+        </p>
+    </div>
+
+    <!-- <div class="gototop">top</div> -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/gototop.PNG" style="width: 90px;height: 90px;"></button>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    </script>
+</body>
+
+</html>

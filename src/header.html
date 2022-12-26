@@ -1,0 +1,134 @@
+<style>
+.header{
+    padding-bottom: 4.3%;
+}
+    /* .dropdown-menu >li>a {
+    width: 50px;
+    text-align: center;
+   } */
+    .dropdown-toggle,
+    .navbar-nav li a {
+        width: 120px;
+        text-align: center;
+    }
+    .navbar {
+        opacity: 0.8;
+        margin-bottom: 0;
+        background-color: #E9EDC9;
+        transition: all 0.2s ease-out;
+    }
+
+    .navbar-container {
+        position: relative;
+    }
+
+    .navbar .navbar-nav li a {
+        font-size: 20px;
+        color: #2f1b02;
+        transition: all 0.2s ease-out;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+        transition: all 0.2s ease-out;
+        font-family: Comic Sans MS;
+    }
+
+    .navbar-scroll {
+        opacity: 1;
+    }
+
+
+
+    @media (min-width: 768px) {
+        .navbar {
+            height: 20%;
+        }
+
+        /* .navmenu */
+        .navbar .navbar-nav li a {
+            padding: 0;
+            margin-top: 15%;
+            margin-left: 20px;
+            line-height: 70px;
+        }
+
+        .navbar-brand {
+            font-size: 28px;
+            padding: 0;
+            height: 120px;
+            line-height: 120px;
+        }
+
+
+        .navbar-scroll {
+            height: 10%;
+            line-height: 70px;
+        }
+
+        .navbar-scroll #top-social-menu {
+            display: none;
+            transition: all 0.2s ease-out;
+        }
+
+        .navbar-scroll .navbar-brand {
+            height: 12%;
+            line-height: 70px;
+        }
+
+        .navbar-scroll .navbar-nav>li>a {
+            opacity: 1;
+            padding: 0;
+            margin-top: 0;
+        }
+
+
+    }
+</style>
+<div class="header">
+    <script>
+        $(window).scroll(function () {
+            var sc = $(window).scrollTop()
+            if (sc > 150) {
+                $("#main-navbar").addClass("navbar-scroll")
+            }
+            else {
+                $("#main-navbar").removeClass("navbar-scroll")
+            }
+        });
+    </script>
+
+    <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top ">
+        <div class="container navbar-container">
+            <div class="navbar-header">
+                <!-- 漢堡 -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">漢堡先生</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="https://youtu.be/VvD0wnLLmm0" class="navbar-brand" target="_blank" style="color: #2f1b02;">M Math N 救數零距離</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse chose">
+                <ul class="nav navbar-nav navbar-right navmenu">
+                    <li><a href="../index.html">專題簡介</a></li>
+                    <li><a href="team.html">組員資料</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">系統畫面<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="system01.html">基本模式</a></li>
+                            <li><a href="system02.html">家教模式</a></li>
+                            <li><a href="system03.html">會員專區</a></li>
+                            <li><a href="system04.html">其他頁面</a></li>
+                            <li><a href="system05.html">登入註冊</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</div>

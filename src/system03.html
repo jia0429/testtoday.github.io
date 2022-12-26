@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/49d901b5f6.js" crossorigin="anonymous"></script>
+    <title>會員專區</title>
+    <link rel="icon" href="/img/logo.ico">
+</head>
+<style>
+    body{
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .center{
+        text-align: center;
+    }
+    .center>img{
+        width: 60%;
+        height:65%;
+        border: 1px solid gray ;
+    }
+    .title {
+        font-size: 20px;
+        color: rgb(64, 49, 22);
+        margin-top: 10px;
+    }
+    .titlename{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <script>
+        $(function () {
+            $(".header").load("header.html");
+            $(".footer").load("footer.html");
+        }
+        )
+    </script>
+    <div class="header"></div>
+    <div class="titlename"><h2><i class="fa-regular fa-pen-to-square"></i>&nbsp;會員專區</h2></div>
+    <div class="">
+        <div class="col-lg-4 center">
+            <p class="title">會員資料</p>
+            <img src="../img/會員資料.jpg" alt="...">
+
+        </div>
+        <!-- <div class="col-lg-4 center">
+            <p class="title">解題者選擇接單</p>
+            <img src="../img/接單區.jpg" alt="...">
+        </div> -->
+        <div class="col-lg-4 center">
+            
+            <p class="title">會員中心</p>
+            <img src="../img/挑戰機制.jpg" alt="...">
+        </div>
+        <div class="col-lg-4 center">
+            
+            <p class="title">客服中心</p>
+            <img src="../img/客服中心.jpg" alt="...">
+        </div>
+    </div>
+    <div class="footer"></div>
+
+</body>
+
+</html>
